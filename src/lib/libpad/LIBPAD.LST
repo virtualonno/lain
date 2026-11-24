@@ -1,0 +1,8 @@
+; LIBPAD: Sony's controller library, its members in Sony's archive order.
+PADMAIN.obj
+PADCMD.obj
+PADIF.obj
+PADENTRY.obj
+PADPORTD.obj
+PADSEQD.obj
+WAITRC2.obj

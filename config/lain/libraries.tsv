@@ -1,0 +1,32 @@
+# The libraries the executables link, in the order their command file names them, then the kit's other
+# files. A member list names the library's modules written in source, in that list's order (the order
+# the linker breaks a tie between two definitions by). The kit file is the library as Sony shipped it,
+# by its SHA-256: a library built from its members departs from it only where the original's did, and
+# lists its commons as the kit's does (plain, as Sony's 3.6 archives and PSYLIB 1.04; marked by a
+# leading zero byte, as PSYLIB 2.x and Sony's 3.7 LIBGPU). Two links take each library, and both give
+# the executables' SHA-256 in builds.tsv: "source link" says how a link from this tree's library
+# source takes it, the link by which that source was checked, and "build.sh takes" what this tree's
+# build.sh puts in its own link. Where every module the executables take from a library is written in
+# source, the kit file adds nothing and a link may leave it unread. A row naming a release is another
+# release's archive of its library, which neither link reads: each module the executables link is the
+# member of the kit's file or of such an archive that its bytes equal.
+library	member list	kit file	kit sha256	commons listed	source link	release	build.sh takes
+LIBAPI	src/lib/api/LIBAPI.LST	LIBAPI.LIB	cbe8ac2428c4ce69044c6bdc22d93b73eed9370e75d268e696722570a6b27168	marked	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBCARD	src/lib/card/LIBCARD.LST	LIBCARD.LIB	15023bb311815e16a10aeb6378271a4ae1fe5d77b52693774fff2f44d07dfb05	plain	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBC2	src/lib/c2/LIBC2.LST	LIBC2.LIB	d081c774ef6866794e4ad1bcef0c02a9c2c1e3cdbb633d9554ca2e9eee7089b5	plain	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBPRESS	src/lib/press/LIBPRESS.LST	LIBPRESS.LIB	ce8f46913cab0febbf1fbdf733f9ce257bab4d5571eff5ccee91e6cd3f7dfba5	plain	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBGPU	src/lib/gpu/LIBGPU.LST	LIBGPU.LIB	775e0b3c1cc6fc7789b4f9da175086a720c9e9ddb639baf1ffdaf7c8f41423c4	marked	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBGS	src/lib/libgs/LIBGS.LST	LIBGS.LIB	389859437e6eacac40aa2b61edfc18080434a02d2e8d73feac48afcbce749282	marked	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBGTE	src/lib/gte/LIBGTE.LST	LIBGTE.LIB	43bb4bb63fb313e6624b3c956d3096174f58ecb1f422bcdd5d9ab3636956cfc9	marked	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBCD	src/lib/cd/LIBCD.LST	LIBCD.LIB	69d11c4736d8ea8373ab58f68662be6cebe58b2c3682a4558cd9831423946bbb	marked	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBETC	src/lib/etc/LIBETC.LST	LIBETC.LIB	9ada65b88f05ede90b9b40a9129d9e9b6a0e81ef6d5824666f3ff345b1543403	marked	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBSN	src/lib/libsn/LIBSN.LST	LIBSN.LIB	1ef99108b065166613a4bf6c5b46a74bd0f584e8a570926e8e0c66497e64f547	plain	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBSND	src/lib/snd/LIBSND.LST	LIBSND.LIB	da44e005603ca115aa0e0c795d0e218d1c2fd741a72a800bdc7f5f7f8a5989c9	marked	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBSPU	src/lib/spu/LIBSPU.LST	LIBSPU.LIB	077f746f20635d1c7e4341663e322d94345b4aca9fc6ccd5c93ef94619e62dd7	marked	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBMATH	src/lib/math/LIBMATH.LST	LIBMATH.LIB	548dc34bbca29dd019cd82b91f6e74fb43351511210cc07f1ebe5b51963a660e	plain	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBMCRD	src/lib/mcrd/LIBMCRD.LST	LIBMCRD.LIB	1f685d332f37419689039969718798d761b50d63e6301b1b32e7e5fec4348abd	plain	only the modules of its member list, built from source: every module the executables take from it is in that list, and the kit file is not read	-	the kit file as shipped
+LIBDS	src/lib/libds/LIBDS.LST	LIBDS.LIB	9b8f936bf5c5c2931a0185bfbf706fa0422c7a47e4134d502cd23ac763363dca	marked	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file as shipped
+LIBPAD	src/lib/libpad/LIBPAD.LST	LIBPAD.LIB	63e2ec7ecf098bb3bedbecdb37c10326dfd0626c68b28f970830ec3aac1e5338	marked	the kit file, each module of its member list built from source in place of the file's module of that name	-	the kit file, the modules stated.tsv names for it made from your executable in place of the file's modules of those names
+NITRBS	src/lib/nitrbs/NITRBS.LST	-	-	plain	only the modules of its member list, built from source: the kit has no such library	-	only the modules of its member list, built from source
+2MBYTE	-	2MBYTE.OBJ	b4ed8b2e76bc841f7a81132906d846877aefa8f6233fb738600c8b1ebd032a46	-	not linked	-	-
+LIBCOMB	-	LIBCOMB.LIB	811d2e72b57f046f7dd5f0f23a2a61758876216ac615ee6f6c1891306b6ed5cc	-	not linked	-	-

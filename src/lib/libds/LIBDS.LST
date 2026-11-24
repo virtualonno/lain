@@ -1,0 +1,2 @@
+; LIBDS: the modules of the library written in source, which join it in the link.
+DSCB.obj

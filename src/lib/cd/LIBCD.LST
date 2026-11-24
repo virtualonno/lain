@@ -1,0 +1,17 @@
+; LIBCD: the library's modules, built from the source beside this list, in its archive's order.
+cdrom.obj
+event.obj
+sys.obj
+bios.obj
+iso9660.obj
+cdread.obj
+cdread2.obj
+c_002.obj
+c_003.obj
+c_004.obj
+c_005.obj
+c_007.obj
+c_008.obj
+c_009.obj
+c_010.obj
+c_011.obj

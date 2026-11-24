@@ -1,0 +1,24 @@
+# How each part of the tree is compiled and assembled: the compiler and its options, the assembler,
+# whether the assembler follows each divide by a variable with its zero and overflow checks (without
+# them it is given -0), and whether it is given -P. A part is the programs' own code, a library (every
+# module its member list names) or one module of a library, which then departs from its library.
+part	compiler	options	assembler	divide checks	-P
+programs	CC1PSX.EXE 2.8.0 SN32 Build 4.0.0007	-O2 -G8	ASPSX.EXE 2.77	yes	no
+library LIBGPU	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fno-builtin -fsigned-char -mmips-as -mhard-float	unix-mips-as-reorder (unreleased)	yes	no
+library LIBCD	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as -mhard-float	unix-mips-as-reorder (unreleased)	yes	no
+library LIBPAD	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as -mhard-float	unix-mips-as-reorder (unreleased)	yes	no
+library LIBSND	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as -mhard-float	unix-mips-as-reorder (unreleased)	yes	no
+library NITRBS	CC1PSX.EXE 2.8.0 SN32 Build 4.0.0007	-O0 -G0	ASPSX.EXE 2.77	yes	no
+library LIBSN	CC1PSX.EXE 2.6.0	-O2 -G0	ASPSX.EXE 2.21	yes	no
+library LIBAPI	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBC2	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBCARD	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBCOMB	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBDS	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBETC	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBGTE	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBMATH	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBMCRD	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBPRESS	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBSPU	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as	unix-mips-as-reorder (unreleased)	yes	no
+library LIBGS	gcc-2.7.2-sony-lib-4x (unreleased)	-O2 -G0 -fsigned-char -mmips-as -mhard-float	unix-mips-as-reorder (unreleased)	yes	no

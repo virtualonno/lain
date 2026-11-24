@@ -1,0 +1,26 @@
+; LIBMATH: its modules written in source, in the order its archive holds them; the archive supplies the rest.
+adddf3.obj
+addmant.obj
+addsf3.obj
+dbshift.obj
+dbshiftu.obj
+divdf3.obj
+divsf3.obj
+fixdfsi.obj
+fixsfsi.obj
+fltsidf.obj
+fltsisf.obj
+gedf2.obj
+gesf2.obj
+ledf2.obj
+lesf2.obj
+ltdf2.obj
+ltsf2.obj
+mainasu.obj
+muldf3.obj
+mulsf3.obj
+negdf2.obj
+negsf2.obj
+subdf3.obj
+subsf3.obj
+ferr.obj

@@ -1,0 +1,13 @@
+; LIBCARD: the library's modules, built from the source beside this list, in its archive's order.
+c112.obj
+c171.obj
+c172.obj
+a74.obj
+a75.obj
+a76.obj
+a78.obj
+a80.obj
+card.obj
+patch.obj
+init.obj
+end.obj

@@ -1,0 +1,21 @@
+; LIBC2: the library's modules, built from the source beside this list, in its archive's order.
+bzero.obj
+ctype.obj
+memchr.obj
+memcpy.obj
+memmove.obj
+memset.obj
+putchar.obj
+rand.obj
+strcat.obj
+strcmp.obj
+strcpy.obj
+strlen.obj
+strncmp.obj
+strncpy.obj
+printf.obj
+prnt.obj
+sprintf.obj
+puts.obj
+setjmp.obj
+malloc.obj

@@ -1,0 +1,86 @@
+; SLPS_016.03 (disc 1) and SLPS_016.04 (disc 2), the same bytes: the whole game. Everything else on the
+; discs is data it loads.
+; PSYLINK command file in the form CCPSX writes. Each `include NAME.obj` is built from the C source of
+; the same name, in the original's object order; lib/obj/2MBYTE.s is the startup, linked first in .text. The
+; libraries under lib/ are, in this repository's build, built from src/lib (Sony's modules in C and assembly,
+; and the NITR-BS decoder); the public build links the kit's own archives for Sony's (docs/building.md).
+	org	$80010000
+
+text	group
+bss	group	bss
+	section	.rdata,text
+	section	.text,text
+	section	.ctors,text
+	section	.dtors,text
+	section	.data,text
+	section	.sdata,text
+	section	.sbss,bss
+	section	.bss,bss
+
+	include	"lib/obj/2MBYTE.obj"
+	include	"main.obj"
+	include	"clip.obj"
+	include	"cd.obj"
+	include	"grid_menu.obj"
+	include	"pad.obj"
+	include	"media_player.obj"
+	include	"text.obj"
+	include	"lapks_player.obj"
+	include	"grid_nodes.obj"
+	include	"sound.obj"
+	include	"system_menu.obj"
+	include	"string_tables.obj"
+	include	"nodes.obj"
+	include	"tim_data.obj"
+	include	"band_tmd.obj"
+	include	"level_label_tmd.obj"
+	include	"ring_tmd.obj"
+	include	"tim_data_3.obj"
+	include	"vertical_bars.obj"
+	include	"tim_data_4.obj"
+	include	"media_cube_tmd.obj"
+	include	"tim_data_5.obj"
+	include	"tmd_data_5.obj"
+	include	"tim_data_6.obj"
+	include	"graphics.obj"
+	include	"grid_scene.obj"
+	include	"grid_effects.obj"
+	include	"media_cube.obj"
+	include	"special_scenes.obj"
+	include	"file_parts.obj"
+	include	"kana_entry.obj"
+	include	"kana_data.obj"
+	include	"speech.obj"
+	include	"voice_screen.obj"
+	include	"line_effect.obj"
+	include	"host_log.obj"
+	include	"napk.obj"
+	include	"upgrade.obj"
+	include	"heap.obj"
+	include	"about.obj"
+	include	"disc_id.obj"
+	include	"memcard.obj"
+	include	"disc_change.obj"
+	include	"vram_dump.obj"
+	include	"continue_prompt.obj"
+	include	"loading.obj"
+
+	inclib	"lib/api/LIBAPI.LIB"
+	inclib	"lib/card/LIBCARD.LIB"
+	inclib	"lib/c2/LIBC2.LIB"
+	inclib	"lib/press/LIBPRESS.LIB"
+	inclib	"lib/gpu/LIBGPU.LIB"
+	inclib	"lib/libgs/LIBGS.LIB"
+	inclib	"lib/gte/LIBGTE.LIB"
+	inclib	"lib/cd/LIBCD.LIB"
+	inclib	"lib/etc/LIBETC.LIB"
+	inclib	"lib/libsn/LIBSN.LIB"
+	inclib	"lib/snd/LIBSND.LIB"
+	inclib	"lib/spu/LIBSPU.LIB"
+	inclib	"lib/math/LIBMATH.LIB"
+	inclib	"lib/mcrd/LIBMCRD.LIB"
+	inclib	"lib/libds/LIBDS.LIB"
+	inclib	"lib/libpad/LIBPAD.LIB"
+	inclib	"lib/nitrbs/NITRBS.LIB"
+
+	regs	pc=__SN_ENTRY_POINT

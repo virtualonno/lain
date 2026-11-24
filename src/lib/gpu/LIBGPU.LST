@@ -1,0 +1,12 @@
+; LIBGPU: the library's modules, built from the source beside this list, in its archive's order.
+ext.obj
+font.obj
+sys.obj
+tmd.obj
+p00.obj
+p01.obj
+p06.obj
+p09.obj
+p10.obj
+p20.obj
+p26.obj

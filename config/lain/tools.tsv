@@ -1,0 +1,14 @@
+# The period tools this tree is built with, each by its file name in the kit, the version string it
+# carries, its size in bytes, its SHA-256 and the kit release this tree declares for it. A row with
+# kit 'not shipped' records a Sony Unix library tool that Sony never released in any PsyQ kit.
+tool	version	size	sha256	kit	used as
+CPPPSX.EXE	2.8.0 SN32 Build 4.0.0007	116736	7becd3512121a037d6c413e35ec4d895c968ec2a52e84a24020e9e21e81a1919	psyq-4.3	preprocessor of every C unit
+CC1PSX.EXE	2.8.0 SN32 Build 4.0.0007	1446912	17081b8e39a92078b16aa788f419306c0d77b28c30a02b9bb9c208cac172e5be	psyq-4.3	compiler of the programs; compiler of the library NITRBS
+ASPSX.EXE	2.77	89600	60a72cc29aa556cd45db1224669583e0e00ecb7b19ecc2efa5da63a6e1598bbb	psyq-4.3	assembler of the programs; assembler of the library NITRBS
+gcc-2.7.2-sony-lib-4x	unreleased (Sony Unix)	-	-	not shipped	compiler of the library LIBGPU; compiler of the library LIBCD; compiler of the library LIBPAD; compiler of the library LIBSND; compiler of the library LIBAPI; compiler of the library LIBC2; compiler of the library LIBCARD; compiler of the library LIBCOMB; compiler of the library LIBDS; compiler of the library LIBETC; compiler of the library LIBGTE; compiler of the library LIBMATH; compiler of the library LIBMCRD; compiler of the library LIBPRESS; compiler of the library LIBSPU; compiler of the library LIBGS
+unix-mips-as-reorder	unreleased (Sony Unix)	-	-	not shipped	assembler of the library LIBGPU; assembler of the library LIBCD; assembler of the library LIBPAD; assembler of the library LIBSND; assembler of the library LIBAPI; assembler of the library LIBC2; assembler of the library LIBCARD; assembler of the library LIBCOMB; assembler of the library LIBDS; assembler of the library LIBETC; assembler of the library LIBGTE; assembler of the library LIBMATH; assembler of the library LIBMCRD; assembler of the library LIBPRESS; assembler of the library LIBSPU; assembler of the library LIBGS
+CC1PSX.EXE	2.6.0	1981074	6587ed37f9f8795f8e47601d3a71167e93c832959f2f314e08d11c53be04661e	psyq-3.5-dos	compiler of the library LIBSN
+ASPSX.EXE	2.21	60665	b52bf3d40a516333e679f18e9297883158e3015e8d97ac501e108b049617ce41	psyq-3.3-dos	assembler of the library LIBSN
+ASMPSX.EXE	2.45	132608	c4d686bd6ec9035b3b2295429e765f90b3d997a7f2666790008676ce4d0e85fa	psyq-4.3	assembler of the hand-written assembly
+DMPSX.EXE	3.04	44032	d4b19e89d485fb5536303200f7dd53e328178d9b5e80fe079a7d4ce36955eb92	psyq-4.3	rewrites the placeholder words of the GTE macros into coprocessor instructions, in each object of a unit using them
+PSYLINK.EXE	2.73	73728	0ee365fa3d31da71ba7086ccecd3d0df2fa39d4ad429e6a983fd9e4037272c6b	psyq-4.3	linker

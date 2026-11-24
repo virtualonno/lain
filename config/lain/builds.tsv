@@ -1,0 +1,6 @@
+# The executables this tree builds: each from its command file for the linker, the names in which are
+# object and library files of the sources under the directory given, with the tree's shared headers in
+# the directory given, every unit compiled with the define given (where one is), the commons laid out
+# in the declared storage order, and the SHA-256 the built executable has.
+program	executable	build	command file	objects in	headers in	define	storage order	sha256
+SLPS	SLPS_016.03	japan	config/lain/SLPS.LNK	src	include	-	config/lain/commons.tsv	33e8e8f8ae7eea1a94d392dc851f639090633bcfb037de164ac5c3a39ef02f95

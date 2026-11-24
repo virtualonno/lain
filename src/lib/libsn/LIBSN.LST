@@ -1,0 +1,7 @@
+; LIBSN: the library's modules, built from the source beside this list, in its archive's order.
+close.obj
+creat.obj
+snmain.obj
+snwrite.obj
+write.obj
+sndef.obj

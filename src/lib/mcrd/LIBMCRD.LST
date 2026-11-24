@@ -1,0 +1,4 @@
+; LIBMCRD: its modules written in source, in the order its archive holds them; they are every module the game takes from it.
+libmcrd.obj
+userfunc.obj
+bios.obj
